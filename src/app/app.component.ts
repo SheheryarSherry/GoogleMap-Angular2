@@ -19,5 +19,23 @@ export class AppComponent {
   title:string='Angular2 Google Map by Sheheryar';
   latitude:number=51.678418;
   logitude:number=7.809007;
+  zoom:number=15;
+
+  clickedMarker(lable:string,index:number){
+    console.log('click the marker: ${lable||index}')
+  }
+  markers:marker[]=[
+    {
+      lat:-37.7863713,
+      lng:175.2796333,
+      dragabble:false
+    },
+    {
+      lat:-37.8253519,
+      lng:175.30493468,
+      dragabble:false
+    }
+
+  ];
 }
 
