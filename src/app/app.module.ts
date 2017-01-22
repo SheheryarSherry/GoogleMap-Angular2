@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {AgmCoreModule} from 'angular2-google-maps/core';
+import { SearchComponentComponent } from './search-component/search-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponentComponent
   ],
   imports: [
     BrowserModule,
